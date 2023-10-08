@@ -1,0 +1,51 @@
+<!--estructura basica de inicio d html-->
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no initial-scale=1, maximum-scale=1"> 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.jS"></script> 
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/styformulario.css">
+   </head>
+   <body>
+    
+    <div class="wrapper">
+        <div class="title">Formulario de Incripción</div>
+    <form action="#" >
+        <div class="field">
+            <input type="text" name="name" minlength="5" maxlength="30" required>
+            <label for="name">Nombre</label>
+               
+            </div>
+            <div class="field">
+                <input type="tel" id="telephone" required>
+                <label for="telephone">Teléfono</label>
+                
+            </div>
+            <div class="field">
+                <input type="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" required>
+                <label for="email">Correo electrónico</label>
+               
+            </div>
+            <div class="field">
+                <input type="password" id="Contraseña" required>
+                <label for="password">Ingrese Contraseña</label>
+            </div>
+            <div class="field">
+                <input type="password" id="Repetir Contraseña" required>
+                <label for="repeatPassword">Confirmar Contraseña</label>
+            </div>
+        
+            
+            <div class="field">
+                <input type="submit" valvue="login">
+                
+            </div>
+        </form>
+    </div>
+    <script src="js/reg.js"></script>
+    <script src="js/conexion.js"></script>
+</body>
+</html>
